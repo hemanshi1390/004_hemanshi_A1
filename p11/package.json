@@ -1,0 +1,9 @@
+{
+  "name": "change_to_upper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A simple package to convert strings to uppercase",
+  "keywords": ["uppercase", "string", "convert"],
+  "author": "Your Name",
+  "license": "ISC"
+}

@@ -1,0 +1,1 @@
+console.log("🕒 Current Date and Time:", new Date().toString());

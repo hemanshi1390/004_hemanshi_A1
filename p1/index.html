@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>p1</title>
+</head>
+<body>
+  <h1>Question 1</h1>
+  <button id="fetchBtn">Get Hello</button>
+  <p id="result"></p>
+
+  <script>
+    document.getElementById('fetchBtn').addEventListener('click', () => {
+      fetch('/gethello')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('result').textContent = data;
+        })
+        .catch(error => {
+          document.getElementById('result').textContent = 'Error: ' + error;
+        });
+    });
+  </script>
+</body>
+</html>
